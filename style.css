@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin:  0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0a0c1b;
+    color: white;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: #1c1938;
+    border-radius: 15px;
+
+}
+.box .left {
+    width: calc(100% - 350px);
+    padding: 60px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+.box .right {
+    width: 350px;
+    height: 100%;
+    background-image: url('./image/xxzxx.jfif');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+.box h1 {
+    color: #feffff;
+    margin-bottom: 30px;
+}
+.box h1 span {
+    color: #a55ad1;
+}
+.box p {
+    color: #aeacc4;
+    margin-bottom: 30px;
+}
+.box ul {
+    display: flex;
+    flex-direction: row;
+}
+.box ul li {
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box ul li span {
+    font-weight: bold;
+    color: #f5f7f2;
+    font-size: 24px;
+}
+.box ul li label {
+    color: #9593a8;
+}
+/* resposive tablet and mobile */
+
+@media screen and (max-width: 768px){
+    .container {
+        justify-content: unset;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: auto;
+    }
+    .box {
+        width: 85%;
+        flex-direction:column-reverse;
+    }
+    .box .left {
+        width: 100%;
+        padding: 30px;
+    }
+    .box .right {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 15PX;
+        width: 100%;
+        background-size: 100% auto;
+        height: 220px;
+    }
+    .box ul {
+        flex-direction: column;
+    }
+    .box ul li {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .box-right {
+        width: 100%;
+        background-image: url('./image/xxzxx.jfif');
+    }
+}
